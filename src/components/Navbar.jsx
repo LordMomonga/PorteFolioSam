@@ -6,7 +6,7 @@ import { logo, menu, close } from '../assets'
 import { ThemeContext } from './ThemeContext';
 import { useContext } from 'react';
 import Brightness1Icon from '@mui/icons-material/Brightness1';
-
+import Oimage from '../assets/OD.png'
 
 
 const Navbar = () => {
@@ -27,8 +27,10 @@ const Navbar = () => {
           setActive("");
           window.scrollTo(0, 0)
         }}>
-          <img src={logo} alt="logo" className="w-[70px]  " />
-          <p className={` text-[18px] font-bold cursor-pointer ${isDarkMode ? 'text-white' : 'text-black'}`}> Kamisi <span className="sm:block hidden"> Samuel</span></p>
+          <img src={Oimage} alt="logo" className="w-[50px] rounded-md " />
+          <p className={` text-[18px] font-bold cursor-pointer ${isDarkMode ? 'text-white' : 'text-black'}`}> O -Dream</p>
+
+
         </Link>
         <button 
         onClick={toggleTheme}

@@ -12,7 +12,7 @@ const Hero = () => {
   const { isDarkMode, toggleTheme } = useContext(ThemeContext);
 
   useEffect(() => {
-    const textArray = ['Kamisi', 'Samuel'];
+    const textArray = ['O-Dream', 'the futur'];
     let currentIndex = 0;
 
     const interval = setInterval(() => {
@@ -33,12 +33,12 @@ const Hero = () => {
         
         </div>
         <div>
-        <h1 className={`${styles.heroHeadText} ${isDarkMode ? 'text-white' : 'text-black'} `}> Hi, I'm <motion.span 
+        <h1 className={`${styles.heroHeadText} ${isDarkMode ? 'text-white' : 'text-black'} `}> Hi, we are <motion.span 
          initial={{ opacity: 0, y: 20 }}
          animate={{ opacity: 1, y: 0 }}
          transition={{ duration: 1, delay: 0.2 }}
-        className={`${isDarkMode ? 'bg-gradient-to-tr text-purple-400': 'text-purple-600'} from-stone-800 via-slate-900 to-zinc-600 rounded-lg `}>{text}</motion.span></h1>
-        <p className={` ${styles.heroSubText} mt-2 ${isDarkMode ? 'text-white' : 'text-black'} `}>I develop Web applications,<br className=" sm:block hidden"/> Games and 3D models</p>
+        className={`${isDarkMode ? 'bg-gradient-to-tr text-purple-400': 'text-purple-600'}  rounded-lg `}>{text}</motion.span></h1>
+        <p className={` ${styles.heroSubText} mt-2 ${isDarkMode ? 'text-white' : 'text-black'} `}>we develop Web applications,<br className=" sm:block hidden"/> Games and 3D models</p>
         
         </div>
        

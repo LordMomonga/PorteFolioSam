@@ -72,7 +72,7 @@ const About = () => {
     <>
     <motion.div variants={textVariant()}>
       <h1 className="text-center">
-      <p className={`${styles.sectionHeadText} ${isDarkMode ? '': 'text-black'} `}> ABOUT ME</p>
+      <p className={`${styles.sectionHeadText} ${isDarkMode ? '': 'text-black'} `}> ABOUT US</p>
       <div className=" border-b-4 border-fuchsia-600  w-[100px] inline-block rounded-lg "> </div>
      
       </h1>
@@ -82,8 +82,7 @@ const About = () => {
        variants={fadeIn("", "", 0.1, 1)}
       className={`${isDarkMode ? 'text-secondary' : 'text-[#3a393a]'} mt-4 mb-5   text-[13px] sm:text-[17px] max-w-3xl leading-[30px]`}
       >
-       As a versatile software engineer, I bring a diverse skill set to the table, encompassing expertise in JavaScript, TypeScript, and C#. Additionally, my creative pursuits in 3D design further enhance my ability to visualize and bring ideas to life. Working with React and Node, I've developed efficient and interactive web applications. Moreover, my passion for gaming shines through as I contribute to projects utilizing Unity Engine. With a constant drive for excellence, I am eager to take on new challenges and create innovative solutions that push the boundaries of technology.
-      </motion.p>
+At o-dream, we specialize in comprehensive IT solutions, offering expertise in web development, native application development, and a range of IT services. Our capabilities extend beyond software development to include the delivery of IT equipment, maintenance of IT services, and other software-related offerings. Whether it's crafting efficient, interactive web and native applications or providing essential IT support and equipment, o-dream is dedicated to delivering excellence and innovation across all our services.</motion.p>
       <div className=" flex flex-wrap gap-5">
        {language.map((language, index) => (
         <OtherCard key={language.title} index={index} {...language}/>
