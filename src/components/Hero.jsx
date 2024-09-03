@@ -38,7 +38,7 @@ const Hero = () => {
          animate={{ opacity: 1, y: 0 }}
          transition={{ duration: 1, delay: 0.2 }}
         className={`${isDarkMode ? 'bg-gradient-to-tr text-purple-400': 'text-purple-600'}  rounded-lg `}>{text}</motion.span></h1>
-        <p className={` ${styles.heroSubText} mt-2 ${isDarkMode ? 'text-white' : 'text-black'} `}>we develop Web applications,<br className=" sm:block hidden"/> </p>
+        <p className={` ${styles.heroSubText} mt-2 ${isDarkMode ? 'text-white' : 'text-black'} `}>we help you throught your IT immersion<br className=" sm:block hidden"/> </p>
         
         </div>
        
