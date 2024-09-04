@@ -8,7 +8,7 @@ import { useContext } from 'react'
 import { ThemeContext } from './ThemeContext'
 
 const Hero = () => {
-  const [text, setText] = useState('Kamisi');
+  const [text, setText] = useState('O-Dream');
   const { isDarkMode, toggleTheme } = useContext(ThemeContext);
 
   useEffect(() => {
