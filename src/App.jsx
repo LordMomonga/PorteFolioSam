@@ -2,6 +2,7 @@ import { BrowserRouter } from 'react-router-dom'
 import{ About, Contact,  Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from './components';
 import { ThemeContext } from './components/ThemeContext';
 import { useContext } from 'react';
+import Choose from './components/choose';
 const App = () => {
   const { isDarkMode } = useContext(ThemeContext);
 
@@ -16,6 +17,7 @@ const App = () => {
       </div>
       <About />
       <Tech />
+      <Choose />
       <Works />
       <Feedbacks />
       <div className="relative z-0">

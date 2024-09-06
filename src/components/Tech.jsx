@@ -37,7 +37,7 @@ const Tech = () => {
       </p>
       <Accordion className='flex flex-col gap-3 p-4 '>
       <AccordionItem key="1" aria-label="Accordion 1" title=" Localisation"   className='bg-gray-900 rounded-lg  shadow-lg md:p-3 p-1 text-[12px] md:text-[16px] relative'>
-       <div className=''> {defaultContent} <img src={Place} className='w-50 h-50 mt-5 float-left mr-4 mb-2   '/> <button className='absolute bg-violet-500 px-5 py-2 rounded-md bottom-[30%] left-[45%]'>voir</button></div>
+       <div className=''> {defaultContent} <img src={Place} className='w-50 h-50 mt-5 float-left mr-4 mb-2   '/> <a href='https://www.google.com/maps/place/Carrefour+Express+Logpom/@4.0827608,9.7629743,17z/data=!4m6!3m5!1s0x10610dd2f308331d:0x9dd8a9e5b19e0d01!8m2!3d4.0827555!4d9.7655492!16s%2Fg%2F11gg9bvm11?entry=ttu&g_ep=EgoyMDI0MDkwMy4wIKXMDSoASAFQAw%3D%3D'><button className='absolute bg-violet-500 px-5 py-2 rounded-md bottom-[30%] left-[45%]'>voir</button></a></div>
         
       </AccordionItem>
       <AccordionItem key="2" aria-label="goals" title=" Objectifs "   className='bg-gray-900 rounded-lg shadow-lg text-center md:p-3 p-1 text-[12px] md:text-[16px]'>

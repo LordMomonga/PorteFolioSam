@@ -1,0 +1,24 @@
+.progress-bar-container {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background-color: #e0e0e0; /* Couleur de fond des barres */
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.progress-bar {
+  height: 100%;
+  transition: width 0.5s ease; /* Animation fluide de la progression */
+  border-radius: 5px;
+}
+
+.progress-value {
+  position: absolute;
+  top: -25px; /* Positionnez le pourcentage au-dessus de la barre */
+  right: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
