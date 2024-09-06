@@ -30,39 +30,46 @@ import {
   export const navLinks = [
     {
       id: "about",
-      title: "About",
+      title: "À propos",
     },
     {
       id: "works",
-      title: "Works",
+      title: "Projets",
     },
     {
       id: "Testimoni",
-      title: "Boast",
+      title: "Témoignages",
     },
     {
       id: "contact",
       title: "Contact",
-    },
-    
+    }
   ];
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Développement Web",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Développement d'Applications",
+      icon: web,
+    },
+    {
+      title: "Conception Infographique",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "Services Réseaux",
       icon: backend,
     },
     {
-      title: "Game Developer",
+      title: "Marketing Digital",
       icon: creator,
+    },
+    {
+      title: "Solution SEO",
+      icon: web,
     },
   ];
   const language =[

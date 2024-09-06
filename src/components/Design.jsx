@@ -20,7 +20,7 @@ const Design = () => {
         await console.log(container);
     }, []);
     return (
-        <div>
+        <div className="z-0">
              <Particles
             id="tsparticles"
             init={particlesInit}

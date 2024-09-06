@@ -8,7 +8,7 @@ const App = () => {
   return (
     <BrowserRouter>
     
-     <div className={` relative z-0  ${isDarkMode ? 'bg-[#121212]' : 'bg-[#bababa]'}`}>
+     <div className={` relative   ${isDarkMode ? 'bg-[#121212]' : 'bg-[#bababa]'}`}>
       <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
       <Navbar />
       <Hero />
