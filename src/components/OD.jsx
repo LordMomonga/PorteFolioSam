@@ -7,13 +7,22 @@ import React from 'react'
 import { useGraph } from '@react-three/fiber'
 import { useGLTF, useAnimations } from '@react-three/drei'
 import { SkeletonUtils } from 'three-stdlib'
+import { useFBX } from '@react-three/drei'
+import { useEffect } from 'react'
 
 export function Od(props) {
   const group = React.useRef()
   const { scene, animations } = useGLTF('/OD.glb')
   const clone = React.useMemo(() => SkeletonUtils.clone(scene), [scene])
   const { nodes, materials } = useGraph(clone)
-  const { actions } = useAnimations(animations, group)
+  const { actions } = useAnimations(animations, group) 
+  useEffect(() =>{
+    if (actions) {
+      // Démarre la première animation (ou change en fonction de l'animation désirée)
+      const action = actions[Object.keys(actions)[0]]; // Prend la première animation
+      action.reset().fadeIn(0.5).play(); // Démarre et fait un fondu
+    }
+  }, [actions])
   return (
     <group ref={group} {...props} dispose={null} scale={0.063}>
       <group name="Scene">

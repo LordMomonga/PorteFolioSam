@@ -19,12 +19,12 @@ const TestimonialSlider = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="relative w-full h-80 md:h-96 overflow-hidden">
+      <div className="relative w-full h-80 md:h-96 overflow-hidden  ">
         {testimonials.map((testimonial, index) => (
           <motion.div
             key={index}
-            className={`absolute top-10 left-[50%] w-full h-full transition-opacity ${
-              index === currentSlide ? "opacity-100" : "opacity-0"
+            className={`flex justify-center   w-full h-full transition-opacity ${
+              index === currentSlide ? "opacity-100 " : "opacity-0"
             }`}
             initial={{ opacity: 0 }}
             animate={{ opacity: index === currentSlide ? 1 : 0 }}
@@ -33,7 +33,7 @@ const TestimonialSlider = () => {
             <img
               src={testimonial.photo}
               alt={testimonial.name}
-              className="object-cover w-70 h-70 rounded-full"
+              className="object-cover w-80 md:w-76 rounded-xl shadow-gray-500 shadow-xl "
             />
           </motion.div>
         ))}
@@ -59,18 +59,20 @@ const TestimonialSlider = () => {
         <p className={`${isDarkMode ? '' : 'text-[#3a393a]'}  mt-4`}>{testimonials[currentSlide].testimonial}</p>
       </div>
       <div className="flex justify-center mt-4">
-        <button
-          className={` ${isDarkMode ? 'bg-purple-500 border-slate-500' : 'hover:bg-purple-200 text-black border-slate-700'} px-4 py-2  border-4 border-slate-500 text-white rounded focus:outline-none`}
+        <motion.button
+        whileHover={{ scale: 1.1 }}
+          className={` ${isDarkMode ? 'bg-purple-500 ' : 'hover:bg-purple-200 text-black'} px-4 py-2  text-white rounded focus:outline-none`}
           onClick={handlePrevSlide}
         >
           Previous
-        </button>
-        <button
-          className={`${isDarkMode ? 'bg-purple-500 border-slate-500' : 'hover:bg-purple-200 text-black border-slate-700'}  px-4 py-2 text-white border-4  rounded focus:outline-none ml-4`}
+        </motion.button>
+        <motion.button
+        whileHover={{ scale: 1.1 }}
+          className={`${isDarkMode ? 'bg-purple-500 border-slate-500' : 'hover:bg-purple-200 text-black border-slate-700'}  px-4 py-2 text-white   rounded focus:outline-none ml-4`}
           onClick={handleNextSlide}
         >
           Next
-        </button>
+        </motion.button>
       </div>
     </div>
   );
