@@ -119,6 +119,25 @@ const Hero = () => {
           </motion.div>
         </div>
       )}
+     <div className='flex justify-center '>
+      {/* Conteneur parent */}
+      <a href='#about'> <div className='h-20 md:h-20 w-8 md:w-10 border-4 border-gray-500 rounded-3xl absolute top-[80%] md:top-[85%]'>
+        {/* Cercle animé avec Framer Motion */}
+        <motion.div
+          className='flex justify-center py-1'
+          initial={{ y: 0 }} // Position initiale
+          animate={{ y: [0, 49, 0] }} // 56px = 100% de la hauteur de h-20 (80px - padding/margin)
+          transition={{
+            repeat: Infinity, // Animation infinie
+            repeatType: 'reverse', // Va-et-vient
+            duration: 1.2, // Durée du mouvement complet (aller-retour)
+            ease: 'easeInOut',
+          }}
+        >
+          <div className='w-5 h-5 rounded-full bg-gray-500' />
+        </motion.div>
+      </div></a>
+    </div>
     </section>
   );
 };
