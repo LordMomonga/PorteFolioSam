@@ -45,33 +45,39 @@ import {
       title: "Contact",
     }
   ];
-  
   const services = [
     {
       title: "Développement Web",
       icon: web,
+      content: "Création de sites web modernes et performants, adaptés à tous les types d'appareils, avec des fonctionnalités sur mesure pour répondre à vos besoins."
     },
     {
       title: "Développement d'Applications",
       icon: web,
+      content: "Conception et développement d'applications mobiles natives et hybrides, optimisées pour Android et iOS, avec une interface intuitive et fluide."
     },
     {
       title: "Conception Infographique",
       icon: mobile,
+      content: "Création de supports graphiques attrayants, allant de logos professionnels aux bannières, brochures et design UI/UX pour vos projets digitaux."
     },
     {
       title: "Services Réseaux",
       icon: backend,
+      content: "Mise en place et gestion de solutions réseau sécurisées, incluant la configuration de serveurs, le câblage et l'optimisation des infrastructures IT."
     },
     {
       title: "Marketing Digital",
       icon: creator,
+      content: "Développement de stratégies marketing en ligne pour accroître votre visibilité, via les réseaux sociaux, campagnes publicitaires et contenus engageants."
     },
     {
       title: "Solution SEO",
       icon: web,
-    },
+      content: "Optimisation de la visibilité de votre site web sur les moteurs de recherche, avec des techniques SEO avancées pour un meilleur positionnement."
+    }
   ];
+  
   const language =[
     {
       title: "3D"

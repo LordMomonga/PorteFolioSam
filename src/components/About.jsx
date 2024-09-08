@@ -9,9 +9,12 @@ import { language } from '../constants'
 import { useContext } from 'react'
 import { ThemeContext } from './ThemeContext'
 import { FaPlus } from 'react-icons/fa'
+import { useState } from 'react'
+import { FaTimes } from 'react-icons/fa'
 
+const ServiceCard = ({index, title, icon, content}) => {
+  const [estModalOuvert, setEstModalOuvert] = useState(false);
 
-const ServiceCard = ({index, title, icon}) => {
 
   return(
     <Tilt className='xs:w-[240px] w-full'>
@@ -41,8 +44,26 @@ const ServiceCard = ({index, title, icon}) => {
     <motion.span 
     whileHover={{ scale: 1.2 }}
     whileTap={{ scale: 0.8 }}
-    className='flex justify-center mt-2 cursor-pointer  text-gray-300  rounded-md font-bold items-center gap-2'>< FaPlus/> More</motion.span>
+    className='flex justify-center  mt-2 cursor-pointer  text-gray-300  rounded-md font-bold items-center gap-2'  onClick={() => setEstModalOuvert(true)}  >< FaPlus/> More</motion.span>
+ 
+ {estModalOuvert && (
+        <motion.div 
+        initial={{ y: '100vw', opacity: 50 }} // Animation pour le contenu du modal
+           animate={{ y: 0, opacity: 1 }} // Position normale avec une opacité de 1
+           transition={{ duration: 0.5, ease: 'easeOut' }} 
+        className="fixed inset-0 bg-gray-800  rounded-2xl  flex justify-center items-center z-[100]">
+         <p className='px-2 text-center'>
+         {content}
+         </p>
+         <motion.button
+         whileHover={{ scale: 1.2 }}
+         onClick={() => setEstModalOuvert(false)} className="mt-4 flex items-center gap-2 bg-violet-500 text-white py-2 px-4 rounded-md absolute bottom-2">
+             <FaTimes /> 
+            </motion.button>
+        </motion.div>
+      )}
   </Tilt>
+
   )
 }
 const OtherCard = ({index, title}) => {
@@ -92,6 +113,7 @@ const About = () => {
       <div className="mt-20 flex flex-wrap justify-center gap-10">
        {services.map((service, index) => (
         <ServiceCard key={service.title} index={index} {...service}/>
+
        ))}
 
       </div>
