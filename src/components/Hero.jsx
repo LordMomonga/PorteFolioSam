@@ -78,9 +78,19 @@ const Hero = () => {
          initial={{ x: " calc(100vw - 50%)" }}
          animate={{ x: "calc(50%)" }}
         className="flex gap-2 text-[15px] md:text-[25px] z-50 ml-0 md:ml-[10%] ">
-          <FaLinkedin />
-          <FaFacebookSquare />
-          <FaWhatsapp />
+        <motion.a
+        whileHover={{scale:1.2}}
+        > <FaLinkedin /></motion.a> 
+        <motion.a
+        href='https://www.facebook.com/profile.php?id=61565592841566&mibextid=LQQJ4d'
+  whileHover={{scale:1.2}}
+  target="_blank"
+        ><FaFacebookSquare /></motion.a>  
+        <motion.a
+        href='https://wa.me/237690364646'
+         whileHover={{scale:1.2}}
+         target="_blank"
+        ><FaWhatsapp /></motion.a>  
         </motion.div>
         <Design />
       </div>

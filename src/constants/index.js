@@ -264,7 +264,7 @@ import {
       position: "CEO, Company Tech-G",
       photo: "https://s4.anilist.co/file/anilistcdn/character/large/b129928-BCEjVaP0AQSw.png",
       testimonial:
-        "J'ai eu le plaisir de collaborer avec Kamisi Samuel sur la création de mon site web e-commerce. Dès le début, Mr Kamisi Samuel a fait preuve d'une grande écoute pour comprendre mes besoins et mes exigences..",
+        "J'ai eu le plaisir de collaborer avec le groupe O-Dream sur la création de mon site web e-commerce. Dès le début, ce groupe a fait preuve d'une grande écoute pour comprendre mes besoins et mes exigences..",
     },
     {
       id: 2,
@@ -272,7 +272,7 @@ import {
       position: "Founder, Company XYZ",
       photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8Z7Cwv-bvjHj9m1Fsvy_2_kG02fujJ_lvnw&usqp=CAU",
       testimonial:
-        "Travailler avec Kamisi Samuel a été une expérience fantastique. Sa passion pour le développement web et son engagement envers l'excellence se reflètent dans chaque ligne de code qu'il écrit. Il a su transformer nos idées en réalité en créant un site web dynamique et esthétiquement plaisant",
+        "Travailler avec l'entreprise Odream a été une expérience fantastique. leur passion pour le développement web et son engagement envers l'excellence se reflètent dans chaque ligne de code qu'il écrit. Il a su transformer nos idées en réalité en créant un site web dynamique et esthétiquement plaisant",
     },
     // Add more testimonials as needed
   ];
