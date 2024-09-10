@@ -262,7 +262,7 @@ import {
       id: 1,
       name: "Hugo Kamga ",
       position: "CEO, Company Tech-G",
-      photo: "https://s4.anilist.co/file/anilistcdn/character/large/b129928-BCEjVaP0AQSw.png",
+      photo: "/user.jpg",
       testimonial:
         "J'ai eu le plaisir de collaborer avec le groupe O-Dream sur la création de mon site web e-commerce. Dès le début, ce groupe a fait preuve d'une grande écoute pour comprendre mes besoins et mes exigences..",
     },
