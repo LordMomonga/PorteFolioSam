@@ -13,8 +13,8 @@ const Stars = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-        <p className={` ${isDarkMode ? 'text-gray-600' : 'text-white'} text-[13px] sm:text-[15px] `}>Contact: Kamisisamuel28@gmail.com</p>
-          <p className={`  ${isDarkMode ? 'text-gray-600' : 'text-white'} text-[13px] sm:text-[15px]  cursor-pointer`}>Phone: +237 690364646</p>
+        <p className={` ${isDarkMode ? 'text-gray-600' : 'text-white'} text-[13px] sm:text-[15px] `}>Contact: Kamisisamuel@odream.site</p>
+          <p className={`  ${isDarkMode ? 'text-gray-600' : 'text-white'} text-[13px] sm:text-[15px]  cursor-pointer`}></p>
         </motion.div>
         <motion.ul
           className="flex space-x-4"
@@ -45,7 +45,7 @@ const Stars = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.4 }}
       >
-        <p className=" text-[13px] sm:text-[15px] text-gray-600">&copy; 2023 Kamisi Samuel . All rights reserved.</p>
+        <p className=" text-[13px] sm:text-[15px] text-gray-600">&copy; 2023 Odream . All rights reserved.</p>
       </motion.div>
     </footer>
   )

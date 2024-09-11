@@ -33,7 +33,7 @@ const TestimonialSlider = () => {
             <img
               src={testimonial.photo}
               alt={testimonial.name}
-              className="object-cover w-50 md:w-46 rounded-full shadow-gray-500 shadow-xl "
+              className="object-cover w-50 md:w-46 rounded-full  shadow-gray-500 shadow-xl "
             />
           </motion.div>
         ))}

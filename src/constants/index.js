@@ -270,7 +270,7 @@ import {
       id: 2,
       name: "Kawa Sebastien",
       position: "Founder, Company XYZ",
-      photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8Z7Cwv-bvjHj9m1Fsvy_2_kG02fujJ_lvnw&usqp=CAU",
+      photo: "/user.jpg",
       testimonial:
         "Travailler avec l'entreprise Odream a été une expérience fantastique. leur passion pour le développement web et son engagement envers l'excellence se reflètent dans chaque ligne de code qu'il écrit. Il a su transformer nos idées en réalité en créant un site web dynamique et esthétiquement plaisant",
     },
